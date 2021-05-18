@@ -78,6 +78,12 @@
   margin-bottom: 40px;
 }
 
+.president-img {
+  background-size: 55%;
+  background-color: #fdfdfd;
+  padding-top: 35px;
+}
+
 @media screen and (max-width: 1200px) {
   .inner-container {
     padding: 80px;
