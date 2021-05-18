@@ -16,3 +16,86 @@
   text-transform: uppercase;
   letter-spacing: 7px;
 }
+
+/* About Us Description of Team */
+
+/* About Us Starts */
+* About us */ .about-us {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden !important;
+}
+.about-section {
+  overflow: hidden;
+  background: url(/IMG/img2.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+}
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 20px;
+  color: #545454;
+  line-height: 25px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-section {
+    padding: 0;
+  }
+  .inner-container {
+    padding: 10px;
+  }
+  .about-us-title {
+    display: none;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    overflow: hidden !important;
+  }
+  .inner-container h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    overflow: hidden !important;
+  }
+}
+/* About Us End */
+/* Responsive end here for event */
