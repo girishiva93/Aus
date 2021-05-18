@@ -19,17 +19,22 @@
 
 /* About Us Description of Team */
 
-/* About Us Starts */
-* About us */ .about-us {
+/* About us */
+.about-us {
   font-size: 100px;
   text-align: center;
-  margin-top: 20px;
   margin-bottom: 20px;
   overflow: hidden !important;
 }
+.about-founder {
+  /* background-color: #545454; */
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
 .about-section {
   overflow: hidden;
-  background: url(/IMG/img2.jpg) no-repeat left;
+  background: url(/IMG/img1.jpg) no-repeat left;
   background-size: 55%;
   background-color: #fdfdfd;
 }
@@ -51,6 +56,21 @@
 }
 
 .text {
+  font-size: 20px;
+  color: #545454;
+  line-height: 25px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+/* About President */
+.president-description {
+  font-size: 20px;
+  color: #545454;
+  line-height: 25px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.president-description-sub {
   font-size: 20px;
   color: #545454;
   line-height: 25px;
