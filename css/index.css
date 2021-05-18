@@ -105,9 +105,61 @@ header ul {
   color:black;
 }
 
+/*slider*/
+.carousel-item{
+  height: 100vh;
+  min-height: 300px;
+}
+
+.carousel-item img{
+  filter: brightness(55%);
+}
+
+.carousel-caption{
+  bottom: 220px;
+}
+
+.carousel-caption h2{
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  font-weight: 900;
+}
+
+.carousel-caption p{
+  font-size: 18px;
+  margin: auto;
+  width: 60%;
+  line-height: 1.9;
+}
+
+.carousel-caption a{
+  text-transform: uppercase;
+  background: darkorange;
+  padding: 10px 30px;
+  display: inline-block;
+  color:#fff;
+  margin-top: 15px;
+  border-radius: 50px;
+}
+
+.w-100{
+  height: 100vh;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav a{
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .social_icons{
+    display: none;
+  }
+}
+
 /*footer*/
 footer{
-  margin-top: 200px;
   position: relative;
   width: 100%;
   height: auto;
