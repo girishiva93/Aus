@@ -125,12 +125,6 @@
   text-transform: uppercase;
 }
 
-.Read-More {
-  text-decoration: none;
-  font-weight: bold;
-  color: #0067a0;
-}
-
 .testimonial-description {
   text-align: center;
   margin-top: -10px;
@@ -141,6 +135,29 @@
   width: 32% !important;
 }
 
+.counselling {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(188, 191, 203, 0.2);
+}
+
+.book-free-counselling {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "SeoulHangang CEB";
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+}
+
+.counselling-description {
+  text-align: center;
+  max-width: 1000px;
+  margin-left: 150px;
+  font-weight: 500;
+  margin-top: -20px;
+}
 @media screen and (max-width: 1200px) {
   .inner-container {
     padding: 80px;
