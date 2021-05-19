@@ -159,6 +159,47 @@ header ul {
   }
 }
 
+/*Counter Section*/
+.fact-area{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.fact-box{
+  box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2);
+}
+
+.single-fact{
+  text-align: center;
+  margin: 45px 0;
+  padding: 8px 16px;
+  border-right: 1px solid #ddd;
+}
+
+.single-fact h2{
+  font-size: 36px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.single-fact p{
+  font-size: 14px;
+}
+
+.fa-facebook{color: #3b5998;}
+
+.fa-university{
+  color:#56CCF2;
+}
+.fa-graduation-cap{
+  color:#BB6BD9;
+}
+.fa-shield{
+  color:#27AE60;
+}
+
 /*footer*/
 /* .navbar > .container,
 .navbar > .container-fluid,
