@@ -30,7 +30,8 @@
   background-color: rgb(188, 191, 203, 0.2);
   position: relative;
   padding-bottom: 100px;
-  padding-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 .about-section {
   overflow: hidden;
@@ -86,6 +87,77 @@
   margin-left: 10%;
 }
 
+/* Experts */
+.expert-title {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "SeoulHangang CEB";
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+}
+
+#bg-color {
+  background-color: #f3ebeb;
+  padding-bottom: 10px;
+}
+
+.about-img {
+  border-radius: 50%;
+  height: 150px;
+  margin-left: 34%;
+  margin-top: 10px;
+}
+
+.users-name {
+  margin-top: 20px;
+  font-size: 1.4em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.job-title {
+  margin-top: -10px;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.testimonial-description {
+  text-align: center;
+  margin-top: -10px;
+  font-size: 1.5em;
+}
+
+.owl-carousel .owl-item img {
+  width: 32% !important;
+}
+
+.counselling {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(188, 191, 203, 0.2);
+}
+
+.book-free-counselling {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "SeoulHangang CEB";
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+}
+
+.counselling-description {
+  text-align: center;
+  max-width: 1000px;
+  margin-left: 150px;
+  font-weight: 500;
+  margin-top: -20px;
+}
 @media screen and (max-width: 1200px) {
   .inner-container {
     padding: 80px;
