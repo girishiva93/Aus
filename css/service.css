@@ -8,7 +8,11 @@
   margin-left: calc(var(--bs-gutter-x) / -2);
 }
 .hero-img {
-  height: 70vh;
+  height: 57vh;
+  width: 50%;
+  padding-left: 50px;
+  margin-left: 150px;
+  position: relative;
 }
 .hero-section-title {
   color: cadetblue;
