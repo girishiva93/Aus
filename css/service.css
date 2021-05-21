@@ -7,3 +7,25 @@
   margin-right: calc(var(--bs-gutter-x) / -2);
   margin-left: calc(var(--bs-gutter-x) / -2);
 }
+.hero-img {
+  height: 70vh;
+}
+.hero-section-title {
+  color: cadetblue;
+  margin-top: 35px;
+  padding-left: 30px;
+}
+.hero-section-description {
+  padding-left: 40px;
+  font-size: 1.5rem;
+}
+.hero-course-subject {
+  font-size: 1.3rem;
+  padding-left: 50px;
+}
+.hero-course-title {
+  color: forestgreen;
+  font-size: 2rem;
+  padding-left: 10px;
+  word-spacing: 10px;
+}
