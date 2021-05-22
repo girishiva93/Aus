@@ -93,3 +93,40 @@
 .owl-carousel .owl-item img {
   width: 100% !important;
 }
+
+/* blog css */
+.service-blog-title {
+  margin-top: 20px;
+}
+.service-blog {
+  margin-left: 10px;
+}
+.blog-detail-right {
+  margin-top: -2.5rem;
+  margin-left: 10px;
+}
+.recent-posts {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 15px;
+}
+.recent-posts a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.post-image img {
+  height: 60px;
+  max-height: 60px;
+  max-width: 60px;
+  height: 60px;
+  border-radius: 3px;
+  left: -65px;
+}
+.post-info span {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  color: rgb(83, 98, 111);
+}
