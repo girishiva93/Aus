@@ -724,9 +724,9 @@ header ul {
 	text-align: center;
 }
 .testimonial-section .slide-img {
-	width: 100%;
+	width: 540px;
 	margin: 0 auto;
-	height: 100%;
+	height: 540px;
 	padding: 40px;
 	background-image: url(../img/pattern-bg.svg);
 	background-position: center;
@@ -762,7 +762,8 @@ header ul {
 }
 .testimonial-section .slide-img img {
 	height: 100%;
-	width: 300px;
+	width: 100%;
+  object-fit:cover;
 }
 .prev,
 .next {
