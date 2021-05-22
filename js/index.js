@@ -20,7 +20,7 @@ counters.forEach(counter => {
   updateCounter();
 })
 
-var swiper = new Swiper('.slider', {
+var swiper = new Swiper('.blog-section .slider', {
   spaceBetween:30,
   effect: 'fade',
   loop: true,
@@ -31,4 +31,28 @@ var swiper = new Swiper('.slider', {
     el: '.slider-pagination',
     clickable:true,
   }
+});
+
+/* Logos section */
+$(document).ready(function(){
+  $('.customer-logos').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 4
+          }
+      }, {
+          breakpoint: 520,
+          settings: {
+              slidesToShow: 3
+          }
+      }]
+  });
 });
