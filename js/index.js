@@ -20,7 +20,8 @@ counters.forEach(counter => {
   updateCounter();
 })
 
-var swiper = new Swiper('.slider', {
+/* Blog section */
+var swiper = new Swiper('.blog-section .slider', {
   spaceBetween:30,
   effect: 'fade',
   loop: true,
@@ -32,3 +33,59 @@ var swiper = new Swiper('.slider', {
     clickable:true,
   }
 });
+
+/* Logos section */
+$(document).ready(function(){
+  $('.customer-logos').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 4
+          }
+      }, {
+          breakpoint: 520,
+          settings: {
+              slidesToShow: 3
+          }
+      }]
+  });
+});
+
+/*Testimonial slider*/
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+const slides = document.querySelectorAll('.testimonial-section .slide');
+
+let index = 0;
+display(index);
+function display (index) {
+	slides.forEach((slide) => {
+		slide.style.display = 'none';
+	});
+	slides[index].style.display = 'flex';
+}
+
+function nextSlide () {
+	index++;
+	if (index > slides.length - 1) {
+		index = 0;
+	}
+	display(index);
+}
+function prevSlide () {
+	index--;
+	if (index < 0) {
+		index = slides.length - 1;
+	}
+	display(index);
+}
+
+next.addEventListener('click', nextSlide);
+prev.addEventListener('click', prevSlide);
