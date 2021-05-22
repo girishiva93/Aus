@@ -77,7 +77,8 @@
   font-weight: bold;
   padding-bottom: 10px;
   color: darkcyan;
-  margin-top: 50px;
+  margin-top: 74px;
+  margin-bottom: 20px;
 }
 
 #bg-color {
@@ -96,14 +97,16 @@
 
 /* blog css */
 .service-blog-title {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 .service-blog {
   margin-left: 10px;
 }
 .blog-detail-right {
-  margin-top: -2.5rem;
+  margin-top: -1rem;
   margin-left: 10px;
+  padding-left: 50px;
 }
 .recent-posts {
   display: flex;
