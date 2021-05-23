@@ -25,6 +25,7 @@ var swiper = new Swiper('.blog-section .slider', {
   spaceBetween:30,
   effect: 'fade',
   loop: true,
+  autoplay:true,
   mousewheel:{
     invert:false,
   },

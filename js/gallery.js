@@ -1,0 +1,3 @@
+$(".row").lightGallery({
+    selector:'.lightbox'
+});
