@@ -85,6 +85,17 @@ header ul {
 .fa-color {
   color: black;
 } 
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav a{
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .social_icons{
+    display: none;
+  }
+}
+
 /* .navbar > .container,
 .navbar > .container-fluid,
 .navbar > .container-lg,
