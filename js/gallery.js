@@ -1,3 +1,3 @@
-$(".row").lightGallery({
+lightGallery(document.querySelector('.row'),{
     selector:'.lightbox'
 });
