@@ -1,0 +1,12 @@
+.visa-section {
+    margin: 30px auto;
+}
+
+.visa-img{
+    height: 400px;
+}
+
+.visa-img img{
+    height: 100%;
+    object-fit: cover;
+}
