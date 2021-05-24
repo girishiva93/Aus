@@ -113,6 +113,7 @@
   flex-wrap: nowrap;
   margin-bottom: 15px;
 }
+
 .recent-posts a {
   text-decoration: none;
   color: #007bff;
@@ -132,4 +133,45 @@
   font-weight: 600;
   line-height: 15px;
   color: rgb(83, 98, 111);
+}
+/* Courses */
+.course-col {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.course-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.course-description {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.course-title {
+  font-size: 1.5rem;
+  font-family: "-webkit-pictograph";
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.course-teacher {
+  font-family: "-webkit-pictograph";
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  color: forestgreen;
+}
+
+.course-des {
+  font-size: 1.1rem;
+  font-family: "-webkit-pictograph";
+  padding-bottom: 10px;
+  text-align: left;
 }

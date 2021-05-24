@@ -157,6 +157,7 @@
   font-weight: 500;
   margin-top: -20px;
 }
+
 @media screen and (max-width: 1200px) {
   .inner-container {
     padding: 80px;
