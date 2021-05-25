@@ -21,7 +21,7 @@ counters.forEach(counter => {
 })
 
 /* Blog section */
-var swiper = new Swiper('.blog-section .slider', {
+var swiper = new Swiper('.blog-slider', {
   spaceBetween:30,
   effect: 'fade',
   loop: true,
@@ -30,7 +30,7 @@ var swiper = new Swiper('.blog-section .slider', {
     invert:false,
   },
   pagination:{
-    el: '.slider-pagination',
+    el: '.blog-slider__pagination',
     clickable:true,
   }
 });
