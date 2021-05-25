@@ -35,14 +35,14 @@
   padding-left: 40px;
 }
 .hero-course-title {
-  color: forestgreen;
+  color: #379cf4;
   font-size: 2rem;
   padding-left: 10px;
   word-spacing: 10px;
 }
 
 .button {
-  background-color: #4caf50; /* Green */
+  background-color: #379cf4; /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -58,13 +58,13 @@
 .hero-join-now-button {
   background-color: white;
   color: black;
-  border: 2px solid #4caf50;
+  border: 2px solid #379cf4;
   padding: 10px 30px 10px 30px;
   margin-left: 40px;
 }
 
 .hero-join-now-button:hover {
-  background-color: #4caf50;
+  background-color: #379cf4;
   color: white;
 }
 /* University */
@@ -76,7 +76,7 @@
   text-transform: uppercase;
   font-weight: bold;
   padding-bottom: 10px;
-  color: darkcyan;
+  color: #379cf4;
   margin-top: 74px;
   margin-bottom: 20px;
 }
@@ -166,7 +166,7 @@
   font-family: "-webkit-pictograph";
   text-transform: uppercase;
   padding-bottom: 10px;
-  color: forestgreen;
+  color: #379cf4;
 }
 
 .course-des {
@@ -259,7 +259,7 @@
 }
 .section-title h2 {
   font-weight: 700;
-  color: forestgreen;
+  color: #379cf4;
   font-size: 45px;
   margin: 40px auto;
   padding-left: 15px;
@@ -343,14 +343,14 @@
     padding-left: 30px;
   }
   .hero-course-title {
-    color: forestgreen;
+    color: #379cf4;
     font-size: 1.4rem;
     padding-left: 10px;
     word-spacing: 10px;
   }
 
   .button {
-    background-color: #4caf50; /* Green */
+    background-color: #379cf4; /* Green */
     border: none;
     color: white;
     padding: 16px 32px;
@@ -366,7 +366,7 @@
   .hero-join-now-button {
     background-color: white;
     color: black;
-    border: 2px solid #4caf50;
+    border: 2px solid #379cf4;
     padding: 10px 30px 10px 30px;
     margin-left: 30%;
   }
