@@ -80,6 +80,7 @@
   transition: 0.9s;
   font-weight: bold;
   padding: 10px 25px;
+  margin-left: 70%;
 }
 .send_message button:hover {
   border: 2px solid #00baeb;
@@ -114,34 +115,7 @@
   font-weight: 500;
   line-height: 2;
 }
-@media (max-width: 1200px) {
-  .content-right {
-    margin: 1%;
-  }
-  .send_message button {
-    width: 45% !important;
-  }
-}
-@media (max-width: 909px) {
-  /* Contact Page Responsive Css */
-  .contact_us {
-    display: initial !important;
-  }
-  .contact-input {
-    width: 100% !important;
-  }
-  .contact-information {
-    width: 100% !important;
-  }
-}
-@media (max-width: 445px) {
-  .send_message button {
-    width: 100% !important;
-  }
-}
-
-/* Selection button */
-:root {
+* Selection button */ :root {
   --radius: 2px;
   --baseFg: dimgray;
   --baseBg: white;
@@ -205,4 +179,67 @@ select:active {
 
 .english-profieiency-title {
   margin-top: -50px;
+}
+
+@media (max-width: 1200px) {
+  .content-right {
+    margin: 1%;
+  }
+  .send_message button {
+    width: 45% !important;
+  }
+}
+@media (max-width: 909px) {
+  /* Contact Page Responsive Css */
+  .contact_us {
+    display: initial !important;
+  }
+  .contact-input {
+    width: 100% !important;
+  }
+  .contact-information {
+    width: 100% !important;
+  }
+  select {
+    font: 400 12px/1.3 sans-serif;
+    -webkit-appearance: none;
+    appearance: none;
+    color: var(--baseFg);
+    border: 1px solid#ced4da;
+    line-height: 1;
+    outline: 0;
+    padding: 1.65em 7.5em 1.55em 7.75em;
+    border-radius: var(--radius);
+    background-color: var(--baseBg);
+    background-image: linear-gradient(var(--baseFg), var(--baseFg)),
+      linear-gradient(-135deg, transparent 50%, var(--accentBg) 50%),
+      linear-gradient(-225deg, transparent 50%, var(--accentBg) 50%),
+      linear-gradient(var(--accentBg) 42%, var(--accentFg) 42%);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 1px 100%, 20px 22px, 20px 22px, 20px 100%;
+    background-position: right 20px center, right bottom, right bottom,
+      right bottom;
+    border-color: black !important;
+  }
+  .send_message button {
+    border: 2px solid;
+    transition: 0.9s;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin-left: 0%;
+  }
+  .contact-us {
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 15%);
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+    padding-top: 15px;
+    height: auto;
+  }
+}
+@media (max-width: 445px) {
+  .send_message button {
+    width: 100% !important;
+  }
 }
