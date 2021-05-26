@@ -1,0 +1,326 @@
+.about-panel {
+  position: relative;
+}
+.hero-image {
+  height: 500px;
+  filter: brightness(55%);
+}
+
+.hero-img-title {
+  position: absolute;
+  margin-top: -146px;
+  color: white;
+  font-size: 90px;
+  margin-left: 103px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+/* About Us Description of Team */
+
+/* About us */
+.about-us {
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+  overflow: hidden !important;
+}
+.about-founder {
+  background-color: rgb(188, 191, 203, 0.2);
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.about-section {
+  overflow: hidden;
+  background: url(/IMG/img1.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+}
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 20px;
+  color: #545454;
+  line-height: 25px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+/* About President */
+.president-description {
+  font-size: 20px;
+  color: #545454;
+  line-height: 25px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.president-description-sub {
+  font-size: 20px;
+  color: #545454;
+  line-height: 25px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.president-img {
+  padding-top: 0px;
+  width: 60%;
+  margin-left: 30%;
+  height: 60vh;
+}
+
+/* Experts */
+.expert-title {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "SeoulHangang CEB";
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+}
+
+#bg-color {
+  background-color: #f3ebeb;
+  padding-bottom: 10px;
+}
+
+.about-img {
+  border-radius: 50%;
+  height: 150px;
+  margin-left: 34%;
+  margin-top: 10px;
+}
+
+.users-name {
+  margin-top: 20px;
+  font-size: 1.4em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.job-title {
+  margin-top: -10px;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.testimonial-description {
+  text-align: center;
+  margin-top: -10px;
+  font-size: 1.5em;
+}
+
+.owl-carousel .owl-item img {
+  width: 32% !important;
+}
+
+.counselling {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(188, 191, 203, 0.2);
+}
+
+.book-free-counselling {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "SeoulHangang CEB";
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+}
+
+.counselling-description {
+  text-align: center;
+  max-width: 1000px;
+  margin-left: 150px;
+  font-weight: 500;
+  margin-top: -20px;
+}
+/* Counselling */
+
+.counselling {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(188, 191, 203, 0.2);
+}
+
+.book-free-counselling {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "SeoulHangang CEB";
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+}
+
+.counselling-description {
+  text-align: center;
+  max-width: 1000px;
+  margin-left: 150px;
+  font-weight: 500;
+  margin-top: -20px;
+}
+.book-a-session {
+  background-color: darkred;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 43%;
+  transition-duration: 0.4s;
+  position: relative;
+  cursor: pointer;
+}
+.email-num-details {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#mobile-view {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .inner-container {
+    width: 100%;
+  }
+  .hero-img-title {
+    position: absolute;
+    margin-top: -90px;
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+  }
+  .book-free-counselling {
+    font-size: 3rem;
+    text-align: center;
+    font-family: "SeoulHangang CEB";
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 10px !important;
+    padding-bottom: 10px;
+  }
+  .counselling-description {
+    text-align: center;
+    max-width: 1000px;
+    margin-left: 0px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .book-a-session {
+    background-color: darkred;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 100px;
+    transition-duration: 0.4s;
+    position: relative;
+    cursor: pointer;
+  }
+  .expert-title {
+    font-size: 3rem;
+    text-align: center;
+    font-family: "SeoulHangang CEB";
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 10px !important;
+    padding-bottom: 10px;
+  }
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    width: 100%;
+    padding-right: none;
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #mobile-view {
+    display: block;
+  }
+  #desktop-view {
+    display: none;
+  }
+  .president-img {
+    padding-top: 0px;
+    width: 100%;
+    margin-left: 0%;
+    height: 60vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-section {
+    padding: 0;
+  }
+  .inner-container {
+    padding: 10px;
+  }
+  .about-us-title {
+    display: none;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    overflow: hidden !important;
+  }
+  .inner-container h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    overflow: hidden !important;
+  }
+}
+/* About Us End */
+/* Responsive end here for event */
