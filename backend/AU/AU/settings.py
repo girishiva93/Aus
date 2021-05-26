@@ -23,6 +23,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'gallery.apps.GalleryConfig',
     'pages.apps.PagesConfig',
+    'aboutcompany.apps.AboutcompanyConfig',
+    'meetteam.apps.MeetteamConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
