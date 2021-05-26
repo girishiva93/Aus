@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'aboutcompany.apps.AboutcompanyConfig',
     'meetteam.apps.MeetteamConfig',
+    'service.apps.ServiceCongig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
