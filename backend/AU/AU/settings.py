@@ -23,8 +23,9 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'gallery.apps.GalleryConfig',
     'pages.apps.PagesConfig',
-    'aboutcompany.apps.AboutcompanyConfig',
+    'indexabout.apps.IndexaboutConfig',
     'meetteam.apps.MeetteamConfig',
+    'messagefromceo.apps.MessagefromceoConfig',
     'indexblog.apps.IndexblogConfig',
     'service.apps.ServiceConfig',
     'django.contrib.admin',

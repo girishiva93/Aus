@@ -1,21 +1,6 @@
-/* delete garne backend bata image tanesi */
-.hero-image {
-  background: url(../img/img2.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 70vh;
-  filter: brightness(55%);
-}
-
 .about-panel {
   position: relative;
 }
-/* .hero-image {
-  height: 500px;
-  filter: brightness(55%);
-} */
 
 .hero-img-title {
   position: absolute;
@@ -44,12 +29,12 @@
   padding-top: 40px;
   padding-bottom: 10px;
 }
-.about-section {
+/* .about-section {
   overflow: hidden;
-  background: url(../img/img1.jpg) no-repeat left;
+  background: url(../img/img3.jpg) no-repeat left;
   background-size: 55%;
   background-color: #fdfdfd;
-}
+} */
 
 .inner-container {
   width: 55%;

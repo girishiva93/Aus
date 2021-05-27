@@ -1,8 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/messagefromceo.css' %}">
+{% endblock %}
 {% block content %}
 <div class="about-panel">
-    <div class="hero-image" style="background: url('./img/img1.jpg'); background-position: center center;
+    <div class="hero-image" style="background: url('{{message.hero_img.url}}'); background-position: center center;
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
@@ -12,43 +15,25 @@
     <h1 class="hero-img-title">Message From CEO</h1>
 </div>
 <section>
-<!-- <div class="about-company">
-    <div class="container">
-        <div class="about-section" >
-            <div class="inner-container">
-                <h1>Message From CEO</h1>
-                <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
-                </p>
-                <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
-                </p>
-                <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
-                </p>
-            </div>
-        </div>
-    </div>
-</div> -->
 <section id="desktop-view">
   <div class="about-founder">
     <div class="container">
         <div class="row">
-            <h1>Message From CEO</h1>
-            <div class="col-sm">
-                <p class="president-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione id, sequi libero enim illo perferendis perspiciatis quae laudantium nemo voluptatum non repudiandae impedit nostrum fugiat voluptas maiores iste dolorem pariatur!
-                </p>
-                <p class="president-description-sub">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quis mollitia quos labore vero explicabo praesentium architecto minus dolorum officiis. Voluptates vero aperiam dolorum doloremque cum quas rerum sapiente assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex reiciendis suscipit eaque doloribus reprehenderit officiis amet aperiam delectus veritatis, enim placeat, dolorum quis ea fugit fugiat sit dolorem repellat.
-                </p>
-                <p class="president-description-sub">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quis mollitia quos labore vero explicabo praesentium architecto minus dolorum officiis. Voluptates vero aperiam dolorum doloremque cum quas rerum sapiente assumenda.
-                </p>
-            </div>
-            <div class="col-sm">
-                <img src="./img/img4.jpg" alt="" class="president-img" width="100%">
-            </div>
+          <h1>{{message.message_title}}</h1>
+          <div class="col-sm">
+              <p class="president-description">
+                  {{message.message_description}}
+              </p>
+              <p class="president-description-sub">
+                {{message.message_description_1st}}
+              </p>
+              <p class="president-description-sub">
+                {{message.message_description_2nd}}
+              </p>
+          </div>
+          <div class="col-sm">
+              <img src="{{message.profile_photo.url}}" alt="{{message.message_title}}" class="president-img" width="100%">
+          </div>
         </div>
 </div>
 </div>
@@ -58,19 +43,19 @@
 <div class="about-founder">
 <div class="container">
     <div class="row">
-        <h1>Message From CEO</h1>
+        <h1>{{message.message_title}}</h1>
         <div class="col-sm">
-          <img src="./img/img4.jpg" alt="" class="president-img" width="100%">
+          <img src="./img/img4.jpg" alt="{{message.message_title}}" class="president-img" width="100%">
          </div>
         <div class="col-sm">
             <p class="president-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione id, sequi libero enim illo perferendis perspiciatis quae laudantium nemo voluptatum non repudiandae impedit nostrum fugiat voluptas maiores iste dolorem pariatur!
+              {{message.message_description}}
             </p>
             <p class="president-description-sub">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quis mollitia quos labore vero explicabo praesentium architecto minus dolorum officiis. Voluptates vero aperiam dolorum doloremque cum quas rerum sapiente assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ex reiciendis suscipit eaque doloribus reprehenderit officiis amet aperiam delectus veritatis, enim placeat, dolorum quis ea fugit fugiat sit dolorem repellat.
+              {{message.message_description_1st}}
             </p>
             <p class="president-description-sub">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quis mollitia quos labore vero explicabo praesentium architecto minus dolorum officiis. Voluptates vero aperiam dolorum doloremque cum quas rerum sapiente assumenda.
+              {{message.message_description_2nd}}
             </p>
         </div>
     </div>
@@ -84,27 +69,13 @@
       <h1 class="expert-title">Our Expert</h1>
     </div>
     <div class="row owl-carousel">
+      {% for AboutTeam in aboutteam %}
       <div class="col">
-        <img src="{% static 'img/img4.jpg' %}" alt="Users Photo" class="about-img" id="img14" style="visibility:visible">
-        <p class="users-name">Shiva Giri</p>
-        <p class="job-title">JOb Title</p>
+        <img src="{{AboutTeam.profile_photo.url}}" alt="Users Photo" class="about-img" id="img14" style="visibility:visible">
+        <p class="users-name">{{AboutTeam.name}}</p>
+        <p class="job-title">{{AboutTeam.job_title}}</p>
       </div>
-      <div class="col">
-        <img src="{% static 'img/img4.jpg' %}" alt=" Users Photo " class="about-img" id="img15" style="visibility:visible">
-        <p class="users-name">Nirmal Thing</p>
-        <p class="job-title">JOb Title</p>
-        <!-- <p class="testimonial-description">I’m writing to ask if you wouldn’t mind giving us a short testimonial for our website.</p> -->
-      </div>
-      <div class="col">
-        <img src="{% static 'img/img4.jpg' %}" alt="Users Photo" class="about-img" id="img16" style="visibility:visible">
-          <p class="users-name">Lalit BC</p>
-          <p class="job-title">JOb Title</p>
-      </div>
-      <div class="col">
-        <img src="{% static 'img/img4.jpg' %}" alt="Users Photo" class="about-img" id="img17" style="visibility:visible">
-          <p class="users-name">Nutan Panta</p>
-          <p class="job-title">JOb Title</p>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
@@ -124,4 +95,8 @@
 </div>
 </div>
 </section>
+{% block script %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="{%static 'js/about.js' %}"></script>
+{% endblock %}
 {% endblock %}
