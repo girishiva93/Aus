@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="hero-image"></div>
+    <!-- blogs Start -->
+    <section id="blogs">
+      <div class="container">
+        <div class="row blog">
+            <div class="blog-left col-md-8 mt-5 mb-5">
+                <div id="content" class="blogContent">
+          <div class="blog">
+          <div class="blog-flex mt-5" onclick="location.href = 'blogDetails.html'">
+            <div class="blog-image">
+              <img src="./img/img2.jpg">
+            </div>
+            <div class="blog-description ps-4">
+              <h3 class=" pt-3">For a decade romeo lived alone</h3>
+              <div class="blog-span d-flex justify-content-start gap-4">
+              <div class="blog-releaseDate">
+              <i class="far fa-calendar" aria-hidden="true"></i>
+                <span>28 Mar 2020</span>
+              </div>
+              <div class="blog-categories">
+                <i class="fas fa-bookmark" aria-hidden="true"></i>
+                <span>Nature</span>
+              </div>
+            </div>
+              <p class="pe-2 pt-3">Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.amet consectetur
+         adipisicing elito sed do eiusmod tempore.
+           incididunt utlabore et dol...</p>
+            </div>
+          </div>
+        </div>
+      
+          <div class="blog">
+          <div class="blog-flex mt-5" onclick="location.href = 'blogDetails.html'">
+            <div class="blog-image">
+              <img src="./img/img3.jpg">
+            </div>
+            <div class="blog-description ps-4">
+              <h3 class=" pt-3">The last summer days</h3>
+              <div class="blog-span d-flex justify-content-start gap-4">
+              <div class="blog-releaseDate">
+              <i class="far fa-calendar" aria-hidden="true"></i>
+                <span>28 Mar 2020</span>
+              </div>
+              <div class="blog-categories">
+                <i class="fas fa-bookmark" aria-hidden="true"></i>
+                <span>Nature</span>
+              </div>
+            </div>
+              <p class="pe-2 pt-3">Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.amet consectetur
+         adipisicing elito sed do eiusmod tempore.
+        incididunt utlabore et dolore...</p>
+            </div>
+          </div>
+        </div>
+      
+          <div class="blog">
+          <div class="blog-flex mt-5" onclick="location.href = 'blogDetails.html'">
+            <div class="blog-image">
+              <img src="./img/img1.jpg">
+            </div>
+            <div class="blog-description ps-4">
+              <h3 class=" pt-3">Biological diversity convention manifesto</h3>
+              <div class="blog-span d-flex justify-content-start gap-4">
+              <div class="blog-releaseDate">
+              <i class="far fa-calendar" aria-hidden="true"></i>
+                <span>28 Mar 2020</span>
+              </div>
+              <div class="blog-categories">
+                <i class="fas fa-bookmark" aria-hidden="true"></i>
+                <span>Nature</span>
+              </div>
+            </div>
+              <p class="pe-2 pt-3">Lorem ipsum dolor sitamet consectetur adipisicing elito sed do eiusmod tempore.amet consectetur
+         adipisicing elito sed do eiusmod tempore.
+        incididunt utlabore et dolore...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+                <nav class="paginate mt-4 mb-5" aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                    <div id="blogPaginationNumbers" class="d-flex gap-3">
+              <li class="page-item">
+                  <a class="blog-paginate page-link active-blog-paginate" href="#">1</a>
+              </li>
+              <li class="page-item">
+                  <a class="blog-paginate page-link" href="#">2</a>
+              </li></div>
+                  </ul>
+                </nav>
+              </div>
+          <div class="blog-right col-md-4">
+            <h3>Recent Posts</h3>
+            <div class="recent-posts">
+              <div class="post-image">
+                <img src="./img/img1.jpg" alt="...">
+              </div>
+              <div class="post-info ps-3">
+                <span>28 Mar 2020</span>
+                <p><a href="blogDetails.html">The last summer days</a></p>
+              </div>
+            </div>
+            <div class="recent-posts">
+              <div class="post-image">
+                <img src="./img/img1.jpg" alt="...">
+              </div>
+              <div class="post-info ps-3">
+                <span>28 Mar 2020</span>
+                <p><a href="blogDetails.html">A Rare Frog Finds a Mate</a></p>
+              </div>
+            </div>
+            <div class="recent-posts">
+              <div class="post-image">
+                <img src="./img/img2.jpg" alt="...">
+              </div>
+              <div class="post-info ps-3">
+                <span>28 Mar 2020</span>
+                <p>
+                  <a href="blogDetails.html">Biological diversity convention manifesto</a>
+                </p>
+              </div>
+            </div>
+            <div class="recent-posts">
+              <div class="post-image">
+                <img src="./img/img3.jpg" alt="...">
+              </div>
+              <div class="post-info ps-3">
+                <span>28 Mar 2020</span>
+                <p>
+                  <a href="blogDetails.html">Protect the planet land and ocean</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog End -->
+
+
+{% endblock %}

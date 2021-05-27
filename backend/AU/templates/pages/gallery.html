@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+{% endblock %}
+{% block content %}
+<section class="container-fluid gallery-container">
+        
+    <div class="tz-gallery">
+
+        <div class="row">
+            {% for img in images %}
+                <div class="col-sm-6 col-md-4">
+                    <a class="lightbox" href="{{img.image.url}}">
+                        <img src="{{img.image.url}}" alt="Park">
+                    </a>
+                </div>
+           {% endfor %}
+        </div>
+    </div>
+  </section>
+  {% block script %}
+  <script src="{% static 'js/gallery.js' %}"></script>
+  {% endblock %}
+{% endblock %}

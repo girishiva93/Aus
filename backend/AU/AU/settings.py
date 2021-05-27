@@ -21,10 +21,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'gallery.apps.GalleryConfig',
     'pages.apps.PagesConfig',
     'aboutcompany.apps.AboutcompanyConfig',
     'meetteam.apps.MeetteamConfig',
-    'service.apps.ServiceCongig',
+    'indexblog.apps.IndexblogConfig',
+    'service.apps.ServiceConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

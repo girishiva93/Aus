@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def meetourteam(request):
+    return render(request, 'pages/meetourteam.html')
