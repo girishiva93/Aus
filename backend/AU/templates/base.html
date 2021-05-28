@@ -25,7 +25,7 @@
 </head>
 <body>
     <header class="header">
-        {% include 'partials/nav.html'%}
+        {% include 'partials/nav.html' with message=message%}
     </header>
 
     {% block content %} {% endblock %}

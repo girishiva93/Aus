@@ -5,34 +5,34 @@
 {% endblock %}
 {% block content %}
 <div class="about-panel">
-    <div class="hero-image" style="background: url('{{message.hero_img.url}}'); background-position: center center;
+    <div class="hero-image" style="background: url('{{messages.hero_img.url}}'); background-position: center center;
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: cover;
     height:70vh;
     filter: brightness(55%);
     "> </div>
-    <h1 class="hero-img-title">Message From CEO</h1>
+    <h1 class="hero-img-title">{{messages.message_title}}</h1>
 </div>
 <section>
 <section id="desktop-view">
   <div class="about-founder">
     <div class="container">
         <div class="row">
-          <h1>{{message.message_title}}</h1>
+          <h1>{{messages.message_title}}</h1>
           <div class="col-sm">
               <p class="president-description">
-                  {{message.message_description}}
+                  {{messages.message_description}}
               </p>
               <p class="president-description-sub">
-                {{message.message_description_1st}}
+                {{messages.message_description_1st}}
               </p>
               <p class="president-description-sub">
-                {{message.message_description_2nd}}
+                {{messages.message_description_2nd}}
               </p>
           </div>
           <div class="col-sm">
-              <img src="{{message.profile_photo.url}}" alt="{{message.message_title}}" class="president-img" width="100%">
+              <img src="{{messages.profile_photo.url}}" alt="{{messages.message_title}}" class="president-img" width="100%">
           </div>
         </div>
 </div>
@@ -43,19 +43,19 @@
 <div class="about-founder">
 <div class="container">
     <div class="row">
-        <h1>{{message.message_title}}</h1>
+        <h1>{{messages.message_title}}</h1>
         <div class="col-sm">
-          <img src="./img/img4.jpg" alt="{{message.message_title}}" class="president-img" width="100%">
+          <img src="{{messages.profile_photo.url}}" alt="{{messages.message_title}}" class="president-img" width="100%">
          </div>
         <div class="col-sm">
             <p class="president-description">
-              {{message.message_description}}
+              {{messages.message_description}}
             </p>
             <p class="president-description-sub">
-              {{message.message_description_1st}}
+              {{messages.message_description_1st}}
             </p>
             <p class="president-description-sub">
-              {{message.message_description_2nd}}
+              {{messages.message_description_2nd}}
             </p>
         </div>
     </div>
