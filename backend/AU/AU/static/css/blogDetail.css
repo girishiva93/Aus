@@ -24,6 +24,9 @@
 /* blogDetail Left End */
 
 /* blogDetail Right Start */
+.blog-right {
+  margin-top: 87px !important;
+}
 .blog-detail-right h3 {
   font-size: 16.3833px;
   font-weight: 700;
