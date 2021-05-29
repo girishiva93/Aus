@@ -11,5 +11,6 @@ urlpatterns = [
     path('meet-our-team/', include('meetteam.urls')),
     path('service/', include('service.urls')),
     path('blog/', include('indexblog.urls')),
+    path('contact/', include('contact.urls')),
     path('admin/', admin.site.urls),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

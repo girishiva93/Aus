@@ -1,4 +1,5 @@
 
+from django.contrib.messages import constants as messages
 from pathlib import Path
 import os
 
@@ -24,6 +25,7 @@ INSTALLED_APPS = [
     'gallery.apps.GalleryConfig',
     'pages.apps.PagesConfig',
     'indexabout.apps.IndexaboutConfig',
+    'contact.apps.ContactConfig',
     'meetteam.apps.MeetteamConfig',
     'messagefromceo.apps.MessagefromceoConfig',
     'indexblog.apps.IndexblogConfig',
@@ -36,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    'phone_field',
 ]
 SITE_ID = 1
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -126,3 +130,7 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger'
+}
