@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404, render
 from .models import HeroSlider, UniversityLogo, Testimonial
+from indexblog.models import Blog
 from messagefromceo.models import Message
 from meetteam.models import AboutTeam
 
@@ -22,10 +23,15 @@ def index(request):
     universityLogos = UniversityLogo.objects.all()
     testimonials = Testimonial.objects.all()
     message = Message.objects.all()
+    blogs = Blog.objects.all()
     context = {
         'heroSlider': heroSlider,
         'universityLogos': universityLogos,
         'testimonials': testimonials,
-        'message': message
+        'message': message,
+        'blogs':blogs
     }
     return render(request, "pages/index.html", context)
+
+def getServiceDetail(request,service_id):
+    return render(request,'pages/serviceDetail.html')

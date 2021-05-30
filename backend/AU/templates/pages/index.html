@@ -102,7 +102,8 @@
         </div>
         <div class="row">
             <!-- feaure box -->
-            <div class="col-sm-6 col-lg-4">
+            <a href="{% url 'visafacts' visa.id %}">
+              <div class="col-sm-6 col-lg-4">
                 <div class="feature-box-1">
                     <div class="icon">
                       <i class="fa fa-users" aria-hidden="true"></i>
@@ -113,6 +114,8 @@
                     </div>
                 </div>
             </div>
+            </a>
+          
             <!-- / -->
             <!-- feaure box -->
             <div class="col-sm-6 col-lg-4">
@@ -139,18 +142,6 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="col-sm-6 col-lg-4">
-              <div class="feature-box-1">
-                  <div class="icon">
-                      <i class="fa fa-desktop"></i>
-                  </div>
-                  <div class="feature-content">
-                      <h5>PSW/Temporary Graduate Visa</h5>
-                      <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
-                  </div>
-              </div>
-          </div>
 
           <div class="col-sm-6 col-lg-4">
             <div class="feature-box-1">
@@ -163,18 +154,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="col-sm-6 col-lg-4">
-          <div class="feature-box-1">
-              <div class="icon">
-                <i class="fa fa-cc-visa" aria-hidden="true"></i>
-              </div>
-              <div class="feature-content">
-                  <h5>Visa Support</h5>
-                  <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
-              </div>
-          </div>
-      </div>
 
       <div class="col-sm-6 col-lg-4">
         <div class="feature-box-1">
@@ -199,18 +178,6 @@
           </div>
       </div>
   </div>
-
-  <div class="col-sm-6 col-lg-4">
-    <div class="feature-box-1">
-        <div class="icon">
-            <i class="fa fa-desktop"></i>
-        </div>
-        <div class="feature-content">
-            <h5>OSHC</h5>
-            <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
-        </div>
-    </div>
-    </div>
     </div>
     </div>
   </section>
@@ -227,42 +194,20 @@
 </div>
 <div class="blog-slider">
   <div class="blog-slider__wrp swiper-wrapper">
-    <div class="blog-slider__item swiper-slide">
-      <div class="blog-slider__img">
-        
-        <img src="{% static 'img/img1.jpg' %}" alt="">
+    {% for blog in blogs %}
+      <div class="blog-slider__item swiper-slide">
+        <div class="blog-slider__img">
+          
+          <img src="{{blog.blog_image.url}}" alt="">
+        </div>
+        <div class="blog-slider__content">
+          <span class="blog-slider__code">{{blog.list_date}}</span>
+          <div class="blog-slider__title">{{blog.blog_title}}</div>
+          <div class="blog-slider__text">{{blog.blog_describe|slice:"200"}}...</div>
+          <a href="{% url 'blogs' blog.id %}" class="blog-slider__button">READ MORE</a>
+        </div>
       </div>
-      <div class="blog-slider__content">
-        <span class="blog-slider__code">26 December 2019</span>
-        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
-        <a href="#" class="blog-slider__button">READ MORE</a>
-      </div>
-    </div>
-    <div class="blog-slider__item swiper-slide">
-      <div class="blog-slider__img">
-        <img src="{% static 'img/img2.jpg' %}" alt="">
-      </div>
-      <div class="blog-slider__content">
-        <span class="blog-slider__code">26 December 2019</span>
-        <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
-        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-        <a href="#" class="blog-slider__button">READ MORE</a>
-      </div>
-    </div>
-    
-    <div class="blog-slider__item swiper-slide">
-      <div class="blog-slider__img">
-        <img src="{% static 'img/img3.jpg' %}" alt="">
-      </div>
-      <div class="blog-slider__content">
-        <span class="blog-slider__code">26 December 2019</span>
-        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
-        <a href="#" class="blog-slider__button">READ MORE</a>
-      </div>
-    </div>
-    
+    {% endfor %}
   </div>
   <div class="blog-slider__pagination"></div>
 </div>

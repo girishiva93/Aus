@@ -7,6 +7,7 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('gallery/', include('gallery.urls')),
     path('about/', include('indexabout.urls')),
+    path('visafacts/',include('visafacts.urls')),
     # path('message-from-ceo/', include('messagefromceo.urls')),
     path('meet-our-team/', include('meetteam.urls')),
     path('service/', include('service.urls')),

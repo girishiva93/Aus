@@ -1,5 +1,13 @@
 .visa-section {
-    margin: 30px auto;
+    margin-top: 100px;
+}
+
+.visa-section h2{
+    margin: 10px auto;
+}
+
+.visa-section p {
+    text-align: justify;
 }
 
 .visa-img{

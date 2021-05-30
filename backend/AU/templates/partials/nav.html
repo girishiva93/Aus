@@ -40,8 +40,9 @@
               Visa Facts
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./visfact.html">Visa 1</a></li>
-              <li><a class="dropdown-item" href="#">Visa 2</a></li>
+              {% for visa in visas %}
+                <li><a class="dropdown-item" href="{% url 'visafacts' visa.id %}">{{visa.visa_title}}</a></li>
+              {% endfor %}
             </ul>
           </li>
           <li class="nav-item">

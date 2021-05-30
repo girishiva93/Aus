@@ -1,16 +1,13 @@
 from messagefromceo.models import Message
-
+from visafacts.models import VisaDetail
 
 def message_context_processor(request):
-    """
-        Context processor for courses
-        Gets all the course object and makes it globally available in templates
-    """
 
     message = Message.objects.all()
-
+    visas = VisaDetail.objects.all()
     context = {
-        "message": message
+        "message": message,
+        "visas": visas
     }
 
     return context
