@@ -5,6 +5,9 @@ from pages.img_compression import compressImage
 class HeroSlider(models.Model):
     slider_image_name = models.CharField(max_length=200)
     slider_image = models.ImageField(upload_to = 'photos/%Y/%m/%d/')
+    slider_image_title = models.CharField(max_length=100)
+    slider_image_description = models.TextField()
+    slider_image_button_name = models.CharField(max_length=20)
 
     def __str__(self):
         return self.slider_image_name
@@ -39,16 +42,3 @@ class Testimonial(models.Model):
         self.slider_image = compressed_image
         super().save(*args, **kwargs)
 
-
-class Service(models.Model):
-    service_title = models.CharField(max_length=300)
-    service_description = models.TextField()
-    service_img = models.ImageField(upload_to = 'photos/%Y/%m/%d/')
-
-    def __str__(self):
-        return self.service_title
-
-    def save(self, *args, **kwargs):
-        compressed_image = compressImage(self.service_img)
-        self.slider_image = compressed_image
-        super().save(*args, **kwargs)

@@ -9,5 +9,5 @@ def getVisaDetail(request,visa_id):
         'visaDetail' : visaDetail
     }
 
-    return render(request,'pages/visafact.html')
+    return render(request,'pages/visafact.html',context)
 

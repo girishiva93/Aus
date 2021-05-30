@@ -277,6 +277,11 @@ header ul {
     text-align: center;
 }
 
+.services-section .row a{
+  text-decoration: none;
+  list-style: none;
+}
+
 /*Blog slider*/
 .blog-slider {
   width: 95%;

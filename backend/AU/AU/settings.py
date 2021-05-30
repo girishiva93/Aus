@@ -22,6 +22,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'servicePage.apps.ServicepageConfig',
     'visafacts.apps.VisafactsConfig',
     'gallery.apps.GalleryConfig',
     'pages.apps.PagesConfig',

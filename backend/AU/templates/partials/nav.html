@@ -31,8 +31,9 @@
               Our Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="{% url 'service' %}">Services</a></li>
-              <li><a class="dropdown-item" href="./serviceDetail.html">Migration</a></li>
+              {% for serv in service %}
+                <li><a class="dropdown-item" href="{% url 'serviceDescription' serv.id %}">{{serv.service_title}}</a></li>
+              {% endfor %}
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -41,7 +42,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               {% for visa in visas %}
-                <li><a class="dropdown-item" href="{% url 'visafacts' visa.id %}">{{visa.visa_title}}</a></li>
+                <li><a class="dropdown-item" href="{% url 'visa' visa.id %}">{{visa.visa_title}}</a></li>
               {% endfor %}
             </ul>
           </li>

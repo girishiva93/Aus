@@ -33,5 +33,3 @@ def index(request):
     }
     return render(request, "pages/index.html", context)
 
-def getServiceDetail(request,service_id):
-    return render(request,'pages/serviceDetail.html')
