@@ -55,6 +55,7 @@ def index(request):
 
 
 def enroll(request):
+
     if request.method == 'POST':
         name = request.POST.get('full_name')
         email = request.POST.get('email')
@@ -75,15 +76,31 @@ def enroll(request):
         future_use = request.POST.get('future_use')
         consult_date = request.POST.get('consult')
         know_us = request.POST.get('know_us')
+        try:
 
-        if name == '' or email == '' or number == '' or qualification == '' or course_complete == '' or gpa == '' or institution == '' or parent_name == '' or address == '' or courses == '' or scores == '' or where_to_study == '' or preferred_course == '' or preferred_uni == '' or declare == '' or consult_date == '' or know_us == '' or future_use == '':
-            messages.error(
-                request, 'Some of the Field is Empty please check the field before you submit')
-        else:
-            user = Enroll.objects.create(
-                full_name=name, email=email, phone=number, qualification=qualification, course_completed=course_complete, GPA=gpa, institution_name=institution,
-            )
-            messages.success(
-                request, 'Thank you for give your time to share your information')
+            if name == '' or email == '' or number == '' or qualification == '' or course_complete == '' or gpa == '' or institution == '' or parent_name == '' or address == '' or courses == '' or scores == '' or where_to_study == '' or preferred_course == '' or preferred_uni == '' or declare == '' or consult_date == '' or know_us == '' or future_use == '':
+                messages.error(
+                    request, 'Some of the Field is Empty please check the field before you submit')
+                return redirect('enroll')
+            elif len(number) < 10 or len(number) > 10:
+                messages.error(
+                    request, 'Phone Number should be 10 Digit Number')
+                return redirect('enroll')
+            else:
+                try:
+                    user = Enroll.objects.create(
+                        full_name=name, email=email, phone=number, qualification=qualification, course_completed=course_complete, GPA=gpa, institution_name=institution, parents_Name=parent_name, address=address, courses=courses, scores=scores, planning_to_take_test=planning, where_to_study=where_to_study, preferred_course=preferred_course, preferred_uni=preferred_uni, declare_to_use_information=declare, can_use_details=future_use,
+                        consult_date=consult_date, how_do_you_know_us=know_us
+                    )
+                    messages.success(
+                        request, 'Thank you for give your time to share your information')
+                    user.save()
+                    return redirect('enroll')
+                except:
+                    messages.error(
+                        request, 'Phone Number should be 10 Digit Number')
+                    return redirect('contact')
+        except(number.DoesNotexit) as e:
+            return render(request, 'pages/enroll.html')
     else:
         return render(request, 'pages/enroll.html')
