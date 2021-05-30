@@ -21,7 +21,7 @@
             <div class="col-sm">
                 <p class="hero-course-subject">Prepartation for <Strong class="hero-course-title"> {{service.hero_subject_name}} </Strong> or <Strong class="hero-course-title"> {{service.hero_subject_name_I}} </Strong> </p>
             </div>
-            <button class="hero-join-now-button">{{service.hero_button_name}}</button>
+            <a href="{% url 'enroll' %}"><button class="hero-join-now-button">{{service.hero_button_name}}</button></a>
         </div>
     </div>
 </section>
@@ -160,7 +160,7 @@
         <h1 class="course-title" >{{Courses.course_name}}</h1>
       <p class="course-teacher">By {{Courses.teacher_name}} | {{Courses.course_start_date}}</p>
       <p class="course-des">{{Courses.course_description}}</p>
-      <a href="./enroll.html"><button class="hero-join-now-button">{{Courses.course_button_name}}</button></a>
+      <a href="{% url 'enroll' %}"><button class="hero-join-now-button">{{Courses.course_button_name}}</button></a>
       </div>
       <div class="course-description">
         <img src="{{Courses.course_img.url}}" alt="{{course_name}}" width="100%">
@@ -178,7 +178,7 @@
           Book Free Counselling
         </h1>
         <p class="counselling-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequatur ipsum odio dolorum! Laborum ipsa odit ad consequatur rem minima quos, tempora molestiae eligendi, doloribus voluptatum voluptatibus earum consectetur. Iusto.</p>
-        <a href=""><button class="book-a-session">Book a Session</button></a>
+        <a href="{% url 'contact' %}"><button class="book-a-session">Book a Session</button></a>
         <p class="email-num-details">Email : example@gamil.com | Number : 9841354543</p>
       </div>
     </div>
