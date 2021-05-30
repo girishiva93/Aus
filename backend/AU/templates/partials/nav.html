@@ -41,13 +41,9 @@
               Visa Facts
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-<<<<<<< HEAD
-                <li><a class="dropdown-item" href="">Hello</a></li>
-=======
               {% for visa in visas %}
                 <li><a class="dropdown-item" href="{% url 'visa' visa.id %}">{{visa.visa_title}}</a></li>
               {% endfor %}
->>>>>>> da8cb9644141ce94c3b2320d35773329453cdad6
             </ul>
           </li>
           <li class="nav-item">

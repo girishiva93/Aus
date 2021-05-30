@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Blog
 from django.template.loader import render_to_string
-from AU.meta_gen import meta_keywords
+from .meta_gen import meta_keywords
 
 
 def indexblog(request):
