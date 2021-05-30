@@ -78,7 +78,7 @@ def enroll(request):
         know_us = request.POST.get('know_us')
         try:
 
-            if name == '' or email == '' or number == '' or qualification == '' or course_complete == '' or gpa == '' or institution == '' or parent_name == '' or address == '' or courses == '' or scores == '' or where_to_study == '' or preferred_course == '' or preferred_uni == '' or declare == '' or consult_date == '' or know_us == '' or future_use == '':
+            if name == '' or email == '' or number == '' or qualification == '' or course_complete == '' or gpa == '' or institution == '' or parent_name == '' or address == '' or courses == '' or where_to_study == '' or preferred_course == '' or preferred_uni == '' or declare == '' or consult_date == '' or know_us == '' or future_use == '':
                 messages.error(
                     request, 'Some of the Field is Empty please check the field before you submit')
                 return redirect('enroll')
