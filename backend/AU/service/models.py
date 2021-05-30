@@ -1,4 +1,5 @@
 from django.db import models
+from pages.img_compression import compressImage
 
 
 class Service(models.Model):
@@ -12,6 +13,11 @@ class Service(models.Model):
     def __str__(self):
         return self.hero_subject_name
 
+    def save(self, *args, **kwargs):
+        compressed_image = compressImage(self.reviewer_image)
+        self.slider_image = compressed_image
+        super().save(*args, **kwargs)
+
 
 class Courses(models.Model):
     course_img = models.ImageField(upload_to='photos/%Y/%m/%d')
@@ -24,3 +30,8 @@ class Courses(models.Model):
 
     def __str__(self):
         return self.course_name
+
+    def save(self, *args, **kwargs):
+        compressed_image = compressImage(self.reviewer_image)
+        self.slider_image = compressed_image
+        super().save(*args, **kwargs)

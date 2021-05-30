@@ -2,6 +2,7 @@ from django.db import models
 
 from datetime import datetime
 from django.urls import reverse
+from pages.img_compression import compressImage
 
 
 class Blog(models.Model):
@@ -31,3 +32,8 @@ class Blog(models.Model):
 
     def get_absolute_url(self):
         return reverse('blogs', args=[self.id, ])
+
+    def save(self, *args, **kwargs):
+        compressed_image = compressImage(self.reviewer_image)
+        self.slider_image = compressed_image
+        super().save(*args, **kwargs)
