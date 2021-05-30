@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/ourteam.css' %}">
+{% endblock %}
+{% block content %}
+ <!--team------------------------>
+ <section id="team">
+    <!--heading---->
+    <strong class="team-heading">Our Team</strong>
+    <!--team-container---------->
+    <div class="team-box-container">
+        <!--member-box-1--->
+        {% for aboutTeam in aboutteam %}
+        <div class="member-box member-{{forloop.counter}}">
+            <!--img---->
+            <div class="member-img">
+                <!--front-img-->
+                <img src="{{aboutTeam.profile_photo.url}}">
+                <!--hover-img-->
+                <img class="hover-img" src="{{aboutTeam.hover_profile_photo.url}}">
+            </div>
+            <!--text----->
+            <div class="member-name">
+                <h3>{{aboutTeam.name}}</h3>
+                <h5>{{aboutTeam.job_title}}</h5>
+            </div>
+        </div>
+        {% endfor %}
+        <!--detail-box-1----------------------------->
+        {% for aboutTeam in aboutteam %}
+            <div class="detail-box-{{forloop.counter}}">
+                <div class="member-detail-box">
+                    <!--img---->
+                    <div class="detail-box-img">
+                        <img src="{{aboutTeam.profile_photo.url}}">
+                    </div>
+                    <!--text-->
+                    <div class="detail-box-text">
+                        <!--cancel-btn---->
+                        <a href="javascript:void(0);" class="cancel">
+                            <i class="fas fa-times"></i>
+                        </a>
+                        <!--name-->
+                        <a href="#" class="detail-name">{{aboutTeam.name}}</a>
+                        <!--position---->
+                        <h5 class="position">Position: {{aboutTeam.job_title}}</h5>
+                        <!--details--->
+                        <p>{{aboutTeam.job_descriptions}}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+{% block script %}
+<script src="{%static 'js/ourteam.js' %}"></script>
+{% endblock %}
+{% endblock %}

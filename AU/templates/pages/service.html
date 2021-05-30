@@ -1,0 +1,194 @@
+<head>
+  <meta property = "og:title" name="BLog" content="check">
+  <meta property="og:description" content = "What are meta tags?
+  Meta tags are HTML <meta> elements that contain metadata or data about the web page. 
+  This data includes inform…">
+</head>
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/service.css' %}">
+{% endblock %}
+{% block content %}
+<section>
+    <div class="row">
+        <div class="col-sm">
+            <img src="{{services.hero_img.url}}" alt="" class="hero-img" width="100%">
+        </div>
+        <div class="col-sm">
+            <p class="hero-section-description">{{services.hero_title}}</p>
+            <p class="hero-section-description-sub">{{services.hero_slogan}}</p>
+            <div class="col-sm">
+                <p class="hero-course-subject">Prepartation for <Strong class="hero-course-title"> {{services.hero_subject_name}} </Strong> or <Strong class="hero-course-title"> {{service.hero_subject_name_I}} </Strong> </p>
+            </div>
+            <a href="{% url 'enroll' %}"><button class="hero-join-now-button">{{services.hero_button_name}}</button></a>
+        </div>
+    </div>
+</section>
+<!---Services section-->
+<section class="section services-section" id="services">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg">
+              <div class="section-title">
+                  <h2>Explore Our Services</h2>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <!-- feaure box -->
+            <div class="col-sm-6 col-lg-4">
+              <a href="{% url 'serviceDescription' 1 %}">
+              <div class="feature-box-1">
+                  <div class="icon">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                  </div>
+                  <div class="feature-content">
+                      <h5>Admission Counselling</h5>
+                      <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+        
+        
+          <!-- / -->
+          <!-- feaure box -->
+          <div class="col-sm-6 col-lg-4">
+            <a href="{% url 'serviceDescription' 2 %}">
+              <div class="feature-box-1">
+                  <div class="icon">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                  </div>
+                  <div class="feature-content">
+                      <h5>Scholarship Information</h5>
+                      <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+         
+          <!-- / -->
+          <!-- feaure box -->
+
+            <div class="col-sm-6 col-lg-4">
+              <a href="{% url 'serviceDescription' 3 %}">
+                <div class="feature-box-1">
+                    <div class="icon">
+                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h5>Student Visa Extension</h5>
+                        <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                    </div>
+                </div>
+              </a>
+            </div>
+          
+
+         
+            <div class="col-sm-6 col-lg-4">
+              <a href="{% url 'serviceDescription' 4 %}">
+              <div class="feature-box-1">
+                  <div class="icon">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                  </div>
+                  <div class="feature-content">
+                      <h5>Course & University Selection</h5>
+                      <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+          
+            <div class="col-sm-6 col-lg-4">
+              <a href="{% url 'serviceDescription' 1 %}">
+              <div class="feature-box-1">
+                  <div class="icon">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                  </div>
+                  <div class="feature-content">
+                      <h5>Migration Services</h5>
+                      <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+         
+            <div class="col-sm-6 col-lg-4">
+              <a href="{% url 'serviceDescription' 1 %}">
+              <div class="feature-box-1">
+                  <div class="icon">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                  </div>
+                  <div class="feature-content">
+                      <h5>Professional Year Program</h5>
+                      <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+         
+
+  </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+  <h1 class="expert-title">Courses</h1>
+  <div class="course-row">
+    {% for Courses in courses %}
+    <div class="course-col">
+      <div class="course-description">
+        <h1 class="course-title" >{{Courses.course_name}}</h1>
+      <p class="course-teacher">By {{Courses.teacher_name}} | {{Courses.course_start_date}}</p>
+      <p class="course-des">{{Courses.course_description}}</p>
+      <a href="{% url 'enroll' %}"><button class="hero-join-now-button">{{Courses.course_button_name}}</button></a>
+      </div>
+      <div class="course-description">
+        <img src="{{Courses.course_img.url}}" alt="{{course_name}}" width="100%">
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
+<div class="counselling">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h1 class="book-free-counselling">
+          Book Free Counselling
+        </h1>
+        <p class="counselling-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequatur ipsum odio dolorum! Laborum ipsa odit ad consequatur rem minima quos, tempora molestiae eligendi, doloribus voluptatum voluptatibus earum consectetur. Iusto.</p>
+        <a href="{% url 'contact' %}"><button class="book-a-session">Book a Session</button></a>
+        <p class="email-num-details">Email : example@gamil.com | Number : 9841354543</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <section>
+  <div class="container">
+     <div class="expert-title">
+       <h1 class="expert-title">Universities & Colleges</h1>
+     </div>
+     <div class="row owl-carousel">
+       <div class="col">
+         <img src="./img/img1.jpg" alt="Users Photo" class="about-img" id="img14" style="visibility:visible">
+       </div>
+       <div class="col">
+         <img src="./img/img2.jpg" alt=" Users Photo " class="about-img" id="img15" style="visibility:visible">
+       </div>
+       <div class="col">
+         <img src="./img/img3.jpg" alt="Users Photo" class="about-img" id="img16" style="visibility:visible">
+       </div>
+       <div class="col">
+         <img src="./img/img3.jpg" alt="Users Photo" class="about-img" id="img17" style="visibility:visible">
+       </div>
+     </div>
+   </div>
+   </div>
+ </div>
+</section>  -->
+{% endblock %}

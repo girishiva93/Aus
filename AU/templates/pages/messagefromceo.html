@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/messagefromceo.css' %}">
+{% endblock %}
+{% block content %}
+<div class="about-panel">
+    <div class="hero-image" style="background: url('{{messages.hero_img.url}}'); background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    height:70vh;
+    filter: brightness(55%);
+    "> </div>
+    <h1 class="hero-img-title">{{messages.message_title}}</h1>
+</div>
+<section>
+<section id="desktop-view">
+  <div class="about-founder">
+    <div class="container">
+        <div class="row">
+          <h1>{{messages.message_title}}</h1>
+          <div class="col-sm">
+              <p class="president-description">
+                  {{messages.message_description}}
+              </p>
+              <p class="president-description-sub">
+                {{messages.message_description_1st}}
+              </p>
+              <p class="president-description-sub">
+                {{messages.message_description_2nd}}
+              </p>
+          </div>
+          <div class="col-sm">
+              <img src="{{messages.profile_photo.url}}" alt="{{messages.message_title}}" class="president-img" width="100%">
+          </div>
+        </div>
+</div>
+</div>
+</section>
+
+<section id="mobile-view">
+<div class="about-founder">
+<div class="container">
+    <div class="row">
+        <h1>{{messages.message_title}}</h1>
+        <div class="col-sm">
+          <img src="{{messages.profile_photo.url}}" alt="{{messages.message_title}}" class="president-img" width="100%">
+         </div>
+        <div class="col-sm">
+            <p class="president-description">
+              {{messages.message_description}}
+            </p>
+            <p class="president-description-sub">
+              {{messages.message_description_1st}}
+            </p>
+            <p class="president-description-sub">
+              {{messages.message_description_2nd}}
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<div class="about-experts id="bg-color">
+<div class="container">
+    <div class="expert-title">
+      <h1 class="expert-title">Our Expert</h1>
+    </div>
+    <div class="row owl-carousel">
+      {% for AboutTeam in aboutteam %}
+      <div class="col">
+        <img src="{{AboutTeam.profile_photo.url}}" alt="Users Photo" class="about-img" id="img14" style="visibility:visible">
+        <p class="users-name">{{AboutTeam.name}}</p>
+        <p class="job-title">{{AboutTeam.job_title}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</div>
+<div class="counselling">
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h1 class="book-free-counselling">
+        Book Free Counselling
+      </h1>
+      <p class="counselling-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequatur ipsum odio dolorum! Laborum ipsa odit ad consequatur rem minima quos, tempora molestiae eligendi, doloribus voluptatum voluptatibus earum consectetur. Iusto.</p>
+      <button class="book-a-session">Book a Session</button>
+      <p class="email-num-details">Email : example@gamil.com | Number : 9841354543</p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+{% block script %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="{%static 'js/about.js' %}"></script>
+{% endblock %}
+{% endblock %}

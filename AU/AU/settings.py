@@ -1,4 +1,5 @@
 
+from django.contrib.messages import constants as messages
 from pathlib import Path
 import os
 
@@ -21,14 +22,29 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'servicePage.apps.ServicepageConfig',
+    'visafacts.apps.VisafactsConfig',
+    'gallery.apps.GalleryConfig',
     'pages.apps.PagesConfig',
+    'indexabout.apps.IndexaboutConfig',
+    'contact.apps.ContactConfig',
+    'meetteam.apps.MeetteamConfig',
+    'messagefromceo.apps.MessagefromceoConfig',
+    'indexblog.apps.IndexblogConfig',
+    'service.apps.ServiceConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+    'phone_field',
+    'metatags',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -53,6 +69,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'pages.context_processors.message_context_processor',
             ],
         },
     },
@@ -117,3 +134,7 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger'
+}

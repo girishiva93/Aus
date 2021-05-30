@@ -1,0 +1,255 @@
+/* Contact Us Start */
+.contact-us {
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  margin: auto;
+  margin-top: 1%;
+  padding-top: 15px;
+  height: auto;
+}
+/* Simple Hover before after paragraph End */
+.right-styled-para {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0 45px 0 0;
+  padding-right: 45px;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(18, 48, 74, 0.7);
+  transition: padding 0.5s;
+}
+.right-styled-para:after {
+  content: "";
+  background-color: rgb(55, 156, 244);
+  position: absolute;
+  width: 25px;
+  height: 6px;
+  border-radius: 4px;
+  top: 12px;
+  left: auto;
+  right: 0 !important;
+  transition: all;
+}
+.title:hover .right-styled-para {
+  padding-right: 50px;
+}
+/* Simple Hover before after paragraph End */
+.contact_us {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Contact Form Starts */
+.contact-input {
+  width: 50%;
+  padding: 30px;
+}
+.Contact-input_area label {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 3px;
+}
+.Contact-input_area input,
+.Contact-input_textarea textarea {
+  display: block;
+  width: 100%;
+  color: #707070;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 16px;
+  border: 1px solid#ced4da;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.5s ease-in-out;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+.Contact-input_area input:focus {
+  box-shadow: none;
+  border-color: #379cf4;
+}
+.Contact-input_textarea textarea:focus {
+  box-shadow: none;
+  border-color: #379cf4;
+}
+.send_message button {
+  border: 2px solid;
+  transition: 0.9s;
+  font-weight: bold;
+  padding: 10px 25px;
+  margin-left: 70%;
+}
+.send_message button:hover {
+  border: 2px solid #00baeb;
+  background-color: transparent;
+  color: #3490dc;
+  border-radius: 15px;
+}
+/* Contact Us End */
+.contact-information {
+  width: 50%;
+  padding: 30px;
+}
+.contact-details {
+  padding: 10px;
+}
+.contact-i {
+  color: #707070 !important;
+  margin-left: 10px;
+  position: relative;
+}
+.contact-details a {
+  text-decoration: none;
+  color: #707070;
+  padding-top: 2px;
+  padding-left: 20px;
+  display: block;
+  line-height: 1.6;
+  font-size: 16px;
+}
+.english-proficiency-option label {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2;
+}
+* Selection button */ :root {
+  --radius: 2px;
+  --baseFg: dimgray;
+  --baseBg: white;
+  --accentFg: #006fc2;
+  --accentBg: #bae1ff;
+}
+
+.theme-pink {
+  --radius: 2em;
+  --baseFg: #c70062;
+  --baseBg: #ffe3f1;
+  --accentFg: #c70062;
+  --accentBg: #ffaad4;
+}
+
+.theme-construction {
+  --radius: 0;
+  --baseFg: white;
+  --baseBg: black;
+  --accentFg: black;
+  --accentBg: orange;
+}
+
+select {
+  font: 400 12px/1.3 sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  color: var(--baseFg);
+  border: 1px solid#ced4da;
+  line-height: 1;
+  outline: 0;
+  padding: 1.65em 22.5em 1.55em 18.75em;
+  border-radius: var(--radius);
+  background-color: var(--baseBg);
+  background-image: linear-gradient(var(--baseFg), var(--baseFg)),
+    linear-gradient(-135deg, transparent 50%, var(--accentBg) 50%),
+    linear-gradient(-225deg, transparent 50%, var(--accentBg) 50%),
+    linear-gradient(var(--accentBg) 42%, var(--accentFg) 42%);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 1px 100%, 20px 22px, 20px 22px, 20px 100%;
+  background-position: right 20px center, right bottom, right bottom,
+    right bottom;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+/* select:hover {
+  background-image: linear-gradient(var(--accentFg), var(--accentFg)),
+    linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
+    linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
+    linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
+} */
+
+select:active {
+  background-image: linear-gradient(var(--accentFg), var(--accentFg)),
+    linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
+    linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
+    linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
+  color: var(--accentBg);
+  border-color: var(--accentFg);
+  background-color: var(--accentFg);
+}
+
+.english-profieiency-title {
+  margin-top: -50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.academic-background {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .content-right {
+    margin: 1%;
+  }
+  .send_message button {
+    width: 45% !important;
+  }
+}
+@media (max-width: 909px) {
+  /* Contact Page Responsive Css */
+  .contact_us {
+    display: initial !important;
+  }
+  .contact-input {
+    width: 100% !important;
+  }
+  .contact-information {
+    width: 100% !important;
+  }
+  select {
+    font: 400 12px/1.3 sans-serif;
+    -webkit-appearance: none;
+    appearance: none;
+    color: var(--baseFg);
+    border: 1px solid#ced4da;
+    line-height: 1;
+    outline: 0;
+    padding: 1.65em 7.5em 1.55em 7.75em;
+    border-radius: var(--radius);
+    background-color: var(--baseBg);
+    background-image: linear-gradient(var(--baseFg), var(--baseFg)),
+      linear-gradient(-135deg, transparent 50%, var(--accentBg) 50%),
+      linear-gradient(-225deg, transparent 50%, var(--accentBg) 50%),
+      linear-gradient(var(--accentBg) 42%, var(--accentFg) 42%);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 1px 100%, 20px 22px, 20px 22px, 20px 100%;
+    background-position: right 20px center, right bottom, right bottom,
+      right bottom;
+    border-color: black !important;
+  }
+  .send_message button {
+    border: 2px solid;
+    transition: 0.9s;
+    font-weight: bold;
+    padding: 10px 25px;
+    margin-left: 0%;
+  }
+  .contact-us {
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 15%);
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+    padding-top: 15px;
+    height: auto;
+  }
+}
+@media (max-width: 445px) {
+  .send_message button {
+    width: 100% !important;
+  }
+}

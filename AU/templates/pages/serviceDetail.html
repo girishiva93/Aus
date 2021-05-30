@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/serviceDetail.css' %}">
+{% endblock %}
+{% block content %}
+{% if serviceDetail %}
+  <section class="service-details">
+    <div class="static-image">
+      <div class="service-title">
+        <h2 class="text-center">{{serviceDetail.service_title}}</h2>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="service-box">
+            <div class="col">
+              <div class="service-img">
+                <img src="{{serviceDetail.service_img.url}}" class="img-responsive">
+              </div>
+            </div>
+            <div class="service-content">
+              <h3>{{serviceDetail.service_title}}</h3>
+              <p>
+                {{serviceDetail.service_description}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+{% endblock %} 

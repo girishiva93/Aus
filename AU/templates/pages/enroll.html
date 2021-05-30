@@ -1,0 +1,287 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/enroll.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="contact-banner">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.52142191842!2d85.32134711506195!3d27.7011827827944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1989dffe346f%3A0x7b7486949eda04e7!2sTEC%20Group%20Global!5e0!3m2!1sen!2snp!4v1621926121740!5m2!1sen!2snp" width="100%"
+    height="450"
+    frameborder="0"
+    style="border: 0"
+    allowfullscreen=""
+    aria-hidden="false"
+    tabindex="0"
+    class="google-map-embeded"></iframe>
+  </section>
+  <!-- Contact Form start -->
+  <section class="contact-us mb-5" style="border-radius: 5px">
+    <div class="container">
+      <div class="title">
+        <h1>Contact Form</h1>
+        <p class="right-styled-para">Course Enroll Details</p>
+      </div>
+      <div class="contact_us">
+        <div class="contact-input">
+          {% include 'partials/_alerts.html' %}
+          <form action="{% url 'enroll'%}" method="POST">
+            {%csrf_token %}
+            <div class="Contact-input_area">
+              <label for="name" class="-form-label font-weight-bold"
+                >Full Name</label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="full_name"
+                autocomplete="name"
+                placeholder="Your Name"
+                autofocus 
+                required
+              />
+
+              <label for="email" class="-form-label font-weight-bold"
+                >Email Address</label
+              >
+              <input
+                id="email"
+                type="email"
+                name="email"
+                autocomplete="email"
+                placeholder="Your Email"
+                required
+              />
+              <label for="number" class="-form-label font-weight-bold"
+                >Phone Number</label
+              >
+              <input
+                id="number"
+                type="tel"
+                name="number"
+                autocomplete="number"
+                placeholder="Your Phone Number"
+                required
+              />
+              <h1 class="academic-background">ACADEMIC BACKGROUND</h1>
+            <label for="name" class="-form-label font-weight-bold"
+                >Current Qualification</label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="qualification"
+                autocomplete="name"
+                placeholder="Your Qualification"
+                autofocus
+                required
+              />
+              <label for="name" class="-form-label font-weight-bold"
+                >Which year was it completed?</label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="course_complete"
+                autocomplete="name"
+                placeholder="Which year was it completed?"
+                autofocus
+                required
+              />
+              <label for="name" class="-form-label font-weight-bold"
+                >Grade/Percentage/GPA *
+                </label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="gpa"
+                autocomplete="gpa"
+                placeholder="Grade/Percentage/GPA"
+                autofocus
+                required
+              />
+              <label for="name" class="-form-label font-weight-bold"
+                >Institution </label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="institution"
+                autocomplete="Institution"
+                placeholder="Institution"
+                autofocus
+                required
+              />
+              <h1 class="academic-background">PARENT'S / SPONSOR's DETAILS</h1>
+              <label for="name" class="-form-label font-weight-bold"
+                >Name, Occupation, Email and Contact number</label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="parent_name"
+                autocomplete="PARENT Name"
+                placeholder="Name, Occupation, Email and Contact number"
+                autofocus
+                required
+              />
+              <label for="name" class="-form-label font-weight-bold"
+                >Address</label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="address"
+                autocomplete="address"
+                placeholder="Address"
+                autofocus
+                required
+              />             
+
+            </div>
+        </div>
+        <div class="contact-information">
+          <div class="Contact-input_area">
+              <h1 class="english-profieiency-title">ENGLISH PROFICIENCY</h1>
+              <label for="courses" class="english-proficiency-option"
+                >Have you taken any of the following English standardized tests?</label
+              >
+              <select name="courses">
+                  <option>IELTS</option>
+                  <option>TOEFL</option>
+                  <option>PTE</option>
+                  <option>OET</option>
+                  <option>NONE</option>
+                 
+              </select>
+              <label for="name" class="-form-label font-weight-bold"
+                >If yes, what are your scores in Listening, Reading, Writing and Speaking?</label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="scores"
+                autocomplete="scores"
+                placeholder="If yes, what are your scores in Listening, Reading, Writing and Speaking?
+                "
+                autofocus
+              />
+              <label for="name" class="-form-label font-weight-bold"
+                >If no, when are you planning to take the test?
+                </label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="planning"
+                autocomplete="planning"
+                placeholder="If no, when are you planning to take the test?
+                "
+                autofocus
+              /> 
+              <h1 class="academic-background">Further Study Plan </h1> 
+              <label for="name" class="-form-label font-weight-bold"
+                >Where do you intend to study? Name the country and the city.</label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="where_to_study"
+                autocomplete="where_to_study"
+                placeholder="Where do you intend to study? Name the country and the city."
+                autofocus
+                required
+              /> 
+              <label for="name" class="-form-label font-weight-bold"
+                >Preferred course</label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="preferred_course"
+                autocomplete="preferred_course"
+                placeholder="Preferred course"
+                autofocus
+                required
+              /> 
+              <label for="name" class="-form-label font-weight-bold"
+                >Preferred Uni or College
+                </label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="preferred_uni"
+                autocomplete="preferred_uni"
+                placeholder="Preferred Uni or College
+                "
+                required
+                autofocus
+              />
+              <h1 class="academic-background">DECLARATION & AGREEMENT</h1>
+              <label for="name" class="-form-label font-weight-bold"
+                >I declare that the information above is correct.                   </label
+              >
+              <select name="declare">
+                  <option>Yes</option>
+                  <option>No</option>
+              </select>
+              <label for="name" class="-form-label font-weight-bold"
+                >TEC Group can use my contact for future updates.</label
+              >
+              <select name="future_use">
+                  <option>Yes</option>
+                  <option>No</option>
+              </select>
+              <label for="name" class="-form-label font-weight-bold"
+              >I would like to consult the counsellor on
+              </label
+            >
+            <input
+              id="date"
+              type="date"
+              class="@error('name') is-invalid @enderror"
+              name="consult"
+              autocomplete="consult"
+              placeholder="dd/mm/yy"
+              autofocus
+              required
+            />
+            <label for="name" class="-form-label font-weight-bold"
+                >How did you hear about us?                  </label
+              >
+              <input
+                id="name"
+                type="text"
+                class="@error('name') is-invalid @enderror"
+                name="know_us"
+                autocomplete="know_us"
+                placeholder="How did you hear about us?                   "
+                autofocus
+                required
+              />
+          <div class="send_message">
+            <button class="btn btn-outline-primary">Send Message</button>
+          </div>
+        </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
