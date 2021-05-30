@@ -11,4 +11,9 @@ def getVisaDetail(request):
         'visaDetail': visaDetail
     }
 
+<<<<<<< HEAD
     return render(request, 'pages/visafact.html', context)
+=======
+    return render(request,'pages/visafact.html',context)
+
+>>>>>>> da8cb9644141ce94c3b2320d35773329453cdad6
