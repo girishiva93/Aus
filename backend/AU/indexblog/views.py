@@ -1,5 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Blog
+from django.template.loader import render_to_string
+from AU.meta_gen import meta_keywords
 
 
 def indexblog(request):
@@ -40,3 +42,10 @@ def blog(request, blog_id):
         'blogs': blogs
     }
     return render(request, 'pages/bloginside.html', context)
+
+
+this_template = "apptemplate.html"
+
+
+def tabs(request):
+    return render(request, {'title': "Blog", 'keys': meta_keywords(render_to_string(this_template))})
