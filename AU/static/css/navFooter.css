@@ -23,16 +23,6 @@ header ul {
   list-style-type: none;
 }
 
-.navbar {
-  background: white;
-  padding: 3rem 2rem;
-  height: 0rem;
-}
-
-.collapse {
-  background: white;
-}
-
 .navbar .navbar-brand a {
   padding: 1rem 0;
   display: block;
@@ -42,8 +32,8 @@ header ul {
 .navbar-brand {
   font-size: 1.4rem;
   color: #eb5757 !important;
-  width: 70px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 .navbar-brand img {
@@ -270,8 +260,6 @@ footer p {
 .copyrightText {
   width: 100%;
   background: #fd3838;
-  padding: 8px 100px;
-  text-align: center;
   color: white;
 }
 
