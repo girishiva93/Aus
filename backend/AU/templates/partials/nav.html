@@ -31,9 +31,14 @@
               Our Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{% url 'company_service' %}">Service</a></li>
+              {% if service %}
               {% for serv in service %}
                 <li><a class="dropdown-item" href="{% url 'serviceDescription' serv.id %}">{{serv.service_title}}</a></li>
               {% endfor %}
+              {% else %}
+              <p>Message not found</p>
+              {% endif %}
             </ul>
           </li>
           <li class="nav-item dropdown">

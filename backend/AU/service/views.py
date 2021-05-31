@@ -3,11 +3,11 @@ from .models import Service, Courses
 
 
 def service(request):
-    service = Service.objects.get(pk=1)
+    services = Service.objects.first
     courses = Courses.objects.all()
 
     context = {
-        'service': service,
+        'services': services,
         'courses': courses,
     }
     return render(request, 'pages/service.html', context)

@@ -5,6 +5,18 @@
 {% endblock %}
 {% block content %}
 <!---Hero slider-->
+<section>
+  <div id="modalOverlay">
+    <div class="modalPopup">
+      <div class="modalContent">
+        <button class="buttonStyle" id="button">X</button>
+          <h4 class="popup-heading">{{popup_message.pop_up_heading}}</h4>
+                    <img src="{{popup_message.pop_up_img.url}}" alt="pop message" width="100%" class="popup-message">
+           <a href="{% url 'contact' %}" class="pop-up__button">{{popup_message.button_name}}</a>
+      </div>
+    </div>
+  </div>
+</section>
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       {% for img in heroSlider %}
@@ -37,7 +49,7 @@
               <p class="animated bounceInLeft" style="animation-delay: 2s">
                 {{img.slider_image_description}}
               </p>
-              <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">{{img.slider_image_button_name}}</a></p>
+              <p class="animated bounceInRight" style="animation-delay: 3s"><a href="{% url 'contact' %}">{{img.slider_image_button_name}}</a></p>
             </div>
           </div>
         {% else %}
@@ -48,7 +60,7 @@
             <p class="animated fadeInLeft" style="animation-delay: 2s"> 
               {{img.slider_image_button_name}}
             </p>
-            <p class="animated zoomIn"><a href="#">{{img.slider_image_button_name}}</a></p>
+            <p class="animated zoomIn"><a href="{% url 'contact' %}">{{img.slider_image_button_name}}</a></p>
           </div>
         </div>
         {% endif %}

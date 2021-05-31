@@ -76,3 +76,10 @@ $('#tes-area').owlCarousel({
   autoPlay: 3000,
   pagination: true
 })
+
+// pop up 
+window.onload = function() {
+  document.getElementById('button').onclick = function() {
+    document.getElementById('modalOverlay').style.display = 'none'
+  };
+};
