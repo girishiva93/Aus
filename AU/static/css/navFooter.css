@@ -68,7 +68,12 @@ header ul {
 .footer-about-read-more {
   color: white;
 }
-
+.footer-about-company-link {
+  color: blue;
+}
+.footer-about-company-link:hover {
+  color: white !important;
+}
 .social_icon .fa {
   color: white;
 }
@@ -260,6 +265,8 @@ footer p {
 .copyrightText {
   width: 100%;
   background: #fd3838;
+  padding: 8px 100px;
+  text-align: center;
   color: white;
 }
 
@@ -284,9 +291,9 @@ footer p {
 
   .copyrightText {
     width: 100%;
-    background: #18181818;
-    padding: 8px 40px;
+    background: #fd3838;
+    padding: 8px 100px;
     text-align: center;
-    color: #999;
+    color: white;
   }
 }

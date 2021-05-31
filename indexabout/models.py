@@ -15,6 +15,6 @@ class AboutCompany(models.Model):
         return self.about_title
 
     def save(self, *args, **kwargs):
-        compressed_image = compressImage(self.reviewer_image)
+        compressed_image = compressImage(self.about_img, self.hero_img)
         self.slider_image = compressed_image
         super().save(*args, **kwargs)

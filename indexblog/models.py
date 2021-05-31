@@ -34,6 +34,6 @@ class Blog(models.Model):
         return reverse('blogs', args=[self.id, ])
 
     def save(self, *args, **kwargs):
-        compressed_image = compressImage(self.reviewer_image)
+        compressed_image = compressImage(self.blog_image)
         self.slider_image = compressed_image
         super().save(*args, **kwargs)

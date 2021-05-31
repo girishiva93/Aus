@@ -14,6 +14,7 @@ class AboutTeam(models.Model):
         return self.name
 
     def save(self, *args, **kwargs):
-        compressed_image = compressImage(self.reviewer_image)
+        compressed_image = compressImage(
+            self.hover_profile_photo, self.profile_photo)
         self.slider_image = compressed_image
         super().save(*args, **kwargs)
