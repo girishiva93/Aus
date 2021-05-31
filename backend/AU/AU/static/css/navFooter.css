@@ -9,7 +9,6 @@ body {
   top: 0;
 }
 
-
 a {
   text-decoration: none;
   color: rgba(43, 54, 69, 0.7);
@@ -24,19 +23,15 @@ header ul {
   list-style-type: none;
 }
 
-
 .navbar {
   background: white;
   padding: 3rem 2rem;
   height: 0rem;
 }
 
-
-
 .collapse {
   background: white;
 }
-
 
 .navbar .navbar-brand a {
   padding: 1rem 0;
@@ -48,7 +43,7 @@ header ul {
   font-size: 1.4rem;
   color: #eb5757 !important;
   width: 50px;
-  height: 50px
+  height: 50px;
 }
 
 .navbar-brand img {
@@ -72,12 +67,16 @@ header ul {
   padding: 5px;
   width: 40px;
   height: 35px;
-  border: 2px solid black;
+  border: 2px solid #eb5757;
   box-sizing: border-box;
   transition: all 0.3s ease-in;
-  background: black;
+  background: #eb5757;
   border-radius: 5px;
   text-align: center;
+}
+
+.footer-about-read-more {
+  color: white;
 }
 
 .social_icon .fa {
@@ -91,18 +90,17 @@ header ul {
 
 .fa-color {
   color: black;
-} 
+}
 
 @media only screen and (max-width: 767px) {
-  .navbar-nav a{
+  .navbar-nav a {
     font-size: 14px;
     font-weight: normal;
   }
-  .social_icons{
+  .social_icons {
     display: none;
   }
 }
-
 
 /* .navbar > .container,
 .navbar > .container-fluid,

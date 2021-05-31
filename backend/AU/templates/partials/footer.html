@@ -3,8 +3,7 @@
       <div class="sec aboutus">
         <h2>About Us</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, in dignissimos magni eos ullam ab recusandae veritatis minima hic voluptatem itaque laboriosam, debitis quos labore nostrum. Quia impedit cupiditate sequi.
-        
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, in dignissimos magni eos ullam ab recusandae veritatis minima hic voluptatem itaque laboriosam, debitis quos labore nostrum. Quia impedit cupiditate sequi. <a class="footer-about-read-more" href="{% url 'about' %}">Read More</a>
         </p>
         <ul class="sci">
           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -16,11 +15,11 @@
       <div class="sec quickLinks">
         <h2>Quick Links</h2>
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'company_service' %}">Service</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'gallery' %}">Gallery</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
       </div>
       <div class="sec contact">
