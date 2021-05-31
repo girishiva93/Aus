@@ -27,19 +27,11 @@
   overflow: hidden !important;
 }
 .about-founder {
-  background-color: rgb(188, 191, 203, 0.2);
   position: relative;
   padding-bottom: 100px;
   padding-top: 40px;
   padding-bottom: 10px;
 }
-.about-section {
-  overflow: hidden;
-  background: url(/IMG/img1.jpg) no-repeat left;
-  background-size: 55%;
-  background-color: #fdfdfd;
-}
-
 .inner-container {
   width: 55%;
   float: right;
@@ -88,7 +80,7 @@
 
 /* Experts */
 .expert-title {
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
   font-family: "SeoulHangang CEB";
   text-transform: uppercase;
@@ -137,7 +129,6 @@
 .counselling {
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: rgb(188, 191, 203, 0.2);
 }
 
 .book-free-counselling {
@@ -162,17 +153,16 @@
 .counselling {
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: rgb(188, 191, 203, 0.2);
 }
 
 .book-free-counselling {
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
   font-family: "SeoulHangang CEB";
   text-transform: uppercase;
   font-weight: bold;
   padding-top: 10px !important;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .counselling-description {
@@ -183,7 +173,7 @@
   margin-top: -20px;
 }
 .book-a-session {
-  background-color: darkred;
+  background-color: #eb5757;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -248,7 +238,7 @@
     margin-top: 10px;
   }
   .book-a-session {
-    background-color: darkred;
+    background-color: #eb5757;
     border: none;
     color: white;
     padding: 16px 32px;

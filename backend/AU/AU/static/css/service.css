@@ -35,14 +35,14 @@
   padding-left: 40px;
 }
 .hero-course-title {
-  color: #379cf4;
+  color: #20247b;
   font-size: 2rem;
   padding-left: 10px;
   word-spacing: 10px;
 }
 
 .button {
-  background-color: #379cf4; /* Green */
+  background-color: #eb5757; /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -58,13 +58,13 @@
 .hero-join-now-button {
   background-color: white;
   color: black;
-  border: 2px solid #379cf4;
+  border: 2px solid #eb5757;
   padding: 10px 30px 10px 30px;
   margin-left: 40px;
 }
 
 .hero-join-now-button:hover {
-  background-color: #379cf4;
+  background-color: #eb5757;
   color: white;
 }
 /* University */
@@ -76,7 +76,7 @@
   text-transform: uppercase;
   font-weight: bold;
   padding-bottom: 10px;
-  color: #379cf4;
+  color: #20247b;
   margin-top: 74px;
   margin-bottom: 20px;
 }
@@ -95,45 +95,6 @@
   width: 100% !important;
 }
 
-/* blog css */
-.service-blog-title {
-  margin-top: 50px;
-  margin-bottom: 40px;
-}
-.service-blog {
-  margin-left: 10px;
-}
-.blog-detail-right {
-  margin-top: -1rem;
-  margin-left: 10px;
-  padding-left: 50px;
-}
-.recent-posts {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 15px;
-}
-
-.recent-posts a {
-  text-decoration: none;
-  color: #007bff;
-  font-size: 14px;
-  font-weight: 500;
-}
-.post-image img {
-  height: 60px;
-  max-height: 60px;
-  max-width: 60px;
-  height: 60px;
-  border-radius: 3px;
-  left: -65px;
-}
-.post-info span {
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 15px;
-  color: rgb(83, 98, 111);
-}
 /* Courses */
 .course-col {
   float: left;
@@ -166,7 +127,7 @@
   font-family: "-webkit-pictograph";
   text-transform: uppercase;
   padding-bottom: 10px;
-  color: #379cf4;
+  color: #20247b;
 }
 
 .course-des {
@@ -259,7 +220,7 @@
 }
 .section-title h2 {
   font-weight: 700;
-  color: #379cf4;
+  color: #20247b;
   font-size: 45px;
   margin: 40px auto;
   padding-left: 15px;
@@ -270,17 +231,16 @@
 .counselling {
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: rgb(188, 191, 203, 0.2);
 }
 
 .book-free-counselling {
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
   font-family: "SeoulHangang CEB";
   text-transform: uppercase;
   font-weight: bold;
   padding-top: 10px !important;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .counselling-description {
@@ -291,7 +251,7 @@
   margin-top: -20px;
 }
 .book-a-session {
-  background-color: darkred;
+  background-color: #eb5757;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -343,14 +303,14 @@
     padding-left: 30px;
   }
   .hero-course-title {
-    color: #379cf4;
+    color: #20247b;
     font-size: 1.4rem;
     padding-left: 10px;
     word-spacing: 10px;
   }
 
   .button {
-    background-color: #379cf4; /* Green */
+    background-color: #20247b; /* Green */
     border: none;
     color: white;
     padding: 16px 32px;
@@ -366,7 +326,7 @@
   .hero-join-now-button {
     background-color: white;
     color: black;
-    border: 2px solid #379cf4;
+    border: 2px solid #eb5757;
     padding: 10px 30px 10px 30px;
     margin-left: 30%;
   }
@@ -397,7 +357,7 @@
     margin-top: 10px;
   }
   .book-a-session {
-    background-color: darkred;
+    background-color: #eb5757;
     border: none;
     color: white;
     padding: 16px 32px;
