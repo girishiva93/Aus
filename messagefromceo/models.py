@@ -14,6 +14,8 @@ class Message(models.Model):
         return self.message_title
 
     def save(self, *args, **kwargs):
-        compressed_image = compressImage(self.hero_img, self.profile_photo)
-        self.slider_image = compressed_image
+        compressed_image_profile_photo = compressImage(self.profile_photo)
+        compressed_image = compressImage(self.hero_img)
+        self.hero_img = compressed_image
+        self.profile_photo = compressed_image_profile_photo
         super().save(*args, **kwargs)

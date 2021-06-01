@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="{% static 'css/service.css' %}">
 {% endblock %}
 {% block content %}
-<section>
+<section id="services">
     <div class="row">
         <div class="col-sm">
             <img src="{{services.hero_img.url}}" alt="" class="hero-img" width="100%">
@@ -102,7 +102,7 @@
           </div>
           
             <div class="col-sm-6 col-lg-4">
-              <a href="{% url 'serviceDescription' 1 %}">
+              <a href="{% url 'serviceDescription' 5 %}">
               <div class="feature-box-1">
                   <div class="icon">
                     <i class="fa fa-cogs" aria-hidden="true"></i>
@@ -116,7 +116,7 @@
           </div>
          
             <div class="col-sm-6 col-lg-4">
-              <a href="{% url 'serviceDescription' 1 %}">
+              <a href="{% url 'serviceDescription' 6 %}">
               <div class="feature-box-1">
                   <div class="icon">
                     <i class="fa fa-globe" aria-hidden="true"></i>
@@ -128,8 +128,6 @@
               </div>
             </a>
           </div>
-         
-
   </div>
   </div>
 </section>

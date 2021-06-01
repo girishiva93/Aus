@@ -33,5 +33,5 @@ class Courses(models.Model):
 
     def save(self, *args, **kwargs):
         compressed_image = compressImage(self.course_img)
-        self.slider_image = compressed_image
+        self.course_img = compressed_image
         super().save(*args, **kwargs)

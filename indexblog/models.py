@@ -35,5 +35,5 @@ class Blog(models.Model):
 
     def save(self, *args, **kwargs):
         compressed_image = compressImage(self.blog_image)
-        self.slider_image = compressed_image
+        self.blog_image = compressed_image
         super().save(*args, **kwargs)
