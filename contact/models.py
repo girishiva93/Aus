@@ -1,5 +1,4 @@
 from django.db import models
-from django.db.models.fields import CharField
 from phone_field import PhoneField
 
 
@@ -42,3 +41,6 @@ class Enroll(models.Model):
     can_use_details = models.CharField(max_length=20)
     consult_date = models.DateField(max_length=200)
     how_do_you_know_us = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.full_name

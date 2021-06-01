@@ -5,7 +5,7 @@ from messagefromceo.models import Message
 
 
 def about(request):
-    aboutcompany = AboutCompany.objects.get(id=1)
+    aboutcompany = AboutCompany.objects.first
     aboutteam = AboutTeam.objects.all()
     message = Message.objects.all()
     context = {

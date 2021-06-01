@@ -36,7 +36,7 @@ def blog(request, blog_id):
         :template:`pages/bloginside.html`
     """
     blogdetails = get_object_or_404(Blog, pk=blog_id)
-    blogs = Blog.objects.all()[:3]
+    blogs = Blog.objects.all()
     context = {
         'blogdetails': blogdetails,
         'blogs': blogs

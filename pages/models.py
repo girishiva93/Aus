@@ -9,7 +9,7 @@ class HeroSlider(models.Model):
     slider_image = models.ImageField(upload_to='photos/%Y/%m/%d/')
     slider_image_title = models.CharField(max_length=100)
     slider_image_description = models.TextField()
-    slider_image_button_name = models.CharField(max_length=20)
+    slider_image_button_name = models.CharField(max_length=100)
 
     def __str__(self):
         return self.slider_image_name

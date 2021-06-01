@@ -8,7 +8,7 @@ class Message(models.Model):
     message_description = models.TextField()
     message_description_1st = models.TextField(blank=True)
     message_description_2nd = models.TextField(blank=True)
-    profile_photo = models.ImageField(upload_to='photo/%Y/%m/%d')
+    profile_photo = models.ImageField(upload_to='photos/%Y/%m/%d')
 
     def __str__(self):
         return self.message_title
