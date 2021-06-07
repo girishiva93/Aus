@@ -15,7 +15,7 @@ function Counter(){
         counter.innerText = `${Math.ceil(c + increment)}`;
         setTimeout(updateCounter, 3);
       } else{
-        counter.innerText = target;
+        counter.innerText = target + "+";
       }
     };
   
