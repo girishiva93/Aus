@@ -14,7 +14,9 @@ a {
   color: rgba(43, 54, 69, 0.7);
   font-weight: 500;
 }
-
+.bg-light {
+  background-color: white !important;
+}
 a:hover {
   color: #eb5757;
 }
@@ -85,6 +87,10 @@ header ul {
 
 .fa-color {
   color: black;
+}
+
+.fab {
+  color: white;
 }
 
 @media only screen and (max-width: 767px) {
