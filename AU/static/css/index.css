@@ -954,9 +954,9 @@ footer p {
 
   .copyrightText {
     width: 100%;
-    background: #18181818;
+    background: #fd3838;
     padding: 8px 40px;
     text-align: center;
-    color: #999;
+    color: white;
   }
 }
