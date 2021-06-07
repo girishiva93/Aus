@@ -24,7 +24,7 @@ def index(request):
     universityLogos = UniversityLogo.objects.all()
     testimonials = Testimonial.objects.all()
     message = Message.objects.all()
-    blogs = Blog.objects.all()
+    blogs = Blog.objects.all()[:10]
     context = {
         'popup_message': popup_message,
         'heroSlider': heroSlider,
