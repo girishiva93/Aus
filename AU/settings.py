@@ -85,9 +85,6 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'TecGroup',
         'CLIENT': {
-            'host': 'mongodb+srv://Shiva:giri1234@cluster0.j8rfr.mongodb.net/TecGroup?retryWrites=true&w=majority',
-            'username': 'Shiva',
-            'password': 'giri1234',
             'authMechanism': 'SCRAM-SHA-1',
         },
     }
