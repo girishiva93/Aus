@@ -83,6 +83,10 @@ WSGI_APPLICATION = 'AU.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
+        'NAME': 'TecGroup',
+        'CLIENT': {
+            'host': 'mongodb+srv://Shiva:giri1234@cluster0.j8rfr.mongodb.net/TecGroup?retryWrites=true&w=majority',
+        },
     }
 }
 
