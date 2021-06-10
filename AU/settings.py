@@ -2,7 +2,6 @@
 from django.contrib.messages import constants as messages
 from pathlib import Path
 import os
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -86,7 +85,10 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'TecGroup',
         'CLIENT': {
-            'host': dj_database_url.config(default=os.environ['DATABASE_URL']),
+            'host': 'mongodb+srv://Shiva:giri1234@cluster0.j8rfr.mongodb.net/TecGroup?retryWrites=true&w=majority',
+            'username': 'Shiva',
+            'password': 'giri1234',
+            'authMechanism': 'SCRAM-SHA-1',
         },
     }
 }
