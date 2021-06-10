@@ -2,6 +2,7 @@
 from django.contrib.messages import constants as messages
 from pathlib import Path
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -85,7 +86,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'TecGroup',
         'CLIENT': {
-            'authMechanism': 'SCRAM-SHA-1',
+            'host': dj_database_url.config(default=os.environ['DATABASE_URL']),
         },
     }
 }
