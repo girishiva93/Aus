@@ -86,6 +86,7 @@ DATABASES = {
         'NAME': 'TecGroup',
         'CLIENT': {
             'host': 'mongodb+srv://Shiva:giri1234@cluster0.j8rfr.mongodb.net/TecGroup?retryWrites=true&w=majority',
+            'authMechanism': 'SCRAM-SHA-1',
         },
     }
 }
